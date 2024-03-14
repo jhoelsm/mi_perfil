@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/stiles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="profile-container">
+        <img id="profile-image" src="img/photo_my_perfil.jpg" alt="Perfil">
+        <div id="profile-name">JOEL SANGALLI MAMANI</div>
+        <button id="about-me-button" onclick="openModal()">Acerca de mí</button>
+
+
+        <div id="modal" onclick="closeModal()">
+            <div id="modal-content" onclick="event.stopPropagation();">
+                <span id="close-modal"></span>
+                <h2>Mis Datos</h2>
+                <P>Mi objetivo profesional es seguir creciendo como profesional en el campo de la informática, contribuyendo con mi experiencia y habilidades a proyectos innovadores que generen un impacto positivo.</P>
+                <hr/>
+                <p>Estoy emocionado por las oportunidades futuras y ansioso por seguir creciendo y contribuyendo en el campo de la informática.</p>
+                <!-- Agrega aquí los detalles de tus datos -->
+            </div>
+        </div>
+
+        <div class="container">
+            <nav>
+                <ul>
+                    <li onclick="openModalProyectos()">Mis Proyectos</li>
+                    <li onclick="openModalHabilidades()">Mis Habilidades</li>
+                    <li onclick="openModalHobbies()">Mis Hobbies</li>
+                    <li onclick="openModalContacto()">Contacto</li>
+                </ul>
+            </nav>
+        </div>
+
+        <div>
+            <!-- Nuevo modal para "Mis Proyectos" -->
+            <div id="modal-proyectos" class="modal" onclick="closeModalProyectos()">
+                <div class="modal-content" onclick="event.stopPropagation();">
+                    <span class="close-modal" onclick="closeModalProyectos()">X</span>
+                    <h2>Mis Proyectos</h2>
+                    <ul>
+                        <li>la salud</li>
+                        <li>la educacion</li>
+                        <li>el arte en la tecnologia</li>
+                    </ul>
+                    <!-- Contenido de tus proyectos -->
+                </div>
+            </div>
+
+        </div>
+
+        <div>
+            <!-- Nuevo modal para "Mis habilidades" -->
+            <div id="modal-habilidades" class="modal" onclick="closeModalHabilidades()">
+                <div class="modal-content" onclick="event.stopPropagation();">
+                    <span class="close-modal" onclick="closeModalHabilidades()">X</span>
+                    <h2>Mis Habilidades</h2>
+                    <ul>
+                        <li>DISEÑADOR GRAFICO</li>
+                        <li>PHOTOSHOP-BASICO</li>
+                        <li>AFTER EFFECT-BASICO</li>
+                        <li>ARTE Y DIBUJO</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <!-- Nuevo modal para "Mis HOBBIES" -->
+            <div id="modal-hobbies" class="modal" onclick="closeModalHobbies()">
+                <div class="modal-content" onclick="event.stopPropagation();">
+                    <span class="close-modal" onclick="closeModalHobbies()">X</span>
+                    <h2>Mis Hobbies</h2>
+                    <ul>
+                        <li>JUEGOS EN LINEA</li>
+                        <li>ESCUCHAR MUSICA</li>
+                        <li>PRCTICA CON GUITARRA</li>
+                        <li>EDITAR VIDEOS</li>
+                        <li>DIBUJO</li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <!-- Nuevo modal para "Mis contactos" -->
+            <div id="modal-contacto" class="modal" onclick="closeModalContacto()">
+                <div class="modal-content" onclick="event.stopPropagation();">
+                    <span class="close-modal" onclick="closeModalContacto()">X</span>
+                    <h2>Mis redes</h2>
+                    <ul>
+                        <li><a href="https://www.facebook.com/joel.sangalli.35?mibextid=ZbWKwL">facebook-official</a></li>
+                        <li><a href="https://www.tiktok.com/@infinix.999?_t=8kevYe3gzHJ&_r=1">tiktok</a></li>
+                        <li><a href="WA.ME/59165544082">whatsapp</a></li>
+                        <li><a href="t.ME/59165544082">telegram</a></li>
+                    </ul>
+                    <!-- Contenido de tus proyectos -->
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="js/codigo.js"></script>
+</body>
+
+</html>
